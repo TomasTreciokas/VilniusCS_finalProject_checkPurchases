@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="actionsPackage.customer.CustomerController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="585.0" prefWidth="653.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label fx:id="nameLabel" layoutX="91.0" layoutY="36.0" prefHeight="20.0" prefWidth="97.0" text="Product name:" />
+                <Label fx:id="amountLabel" layoutX="91.0" layoutY="66.0" prefHeight="20.0" prefWidth="107.0" text="Amount" />
+                <Label fx:id="priceLabel" layoutX="91.0" layoutY="96.0" prefHeight="20.0" prefWidth="76.0" text="Price" />
+                <Label fx:id="groupLabel" layoutX="91.0" layoutY="121.0" prefHeight="39.0" prefWidth="107.0" text="Group:" />
+                <TextField fx:id="nameField" layoutX="198.0" layoutY="33.0" prefWidth="250.0" />
+                <TextField fx:id="amountField" layoutX="198.0" layoutY="63.0" prefWidth="250.0" />
+                <TextField fx:id="priceField" layoutX="198.0" layoutY="93.0" prefWidth="250.0" />
+                <ChoiceBox fx:id="chooseGroup" layoutX="197.0" layoutY="128.0" onMouseClicked="#addOptions" onMousePressed="#addOptions" prefWidth="250.0" />
+                <ListView fx:id="purchaseList" layoutX="21.0" layoutY="157.0" prefHeight="482.0" prefWidth="318.0" />
+                <Button fx:id="addPurchaseBtn" layoutX="466.0" layoutY="262.0" mnemonicParsing="false" onAction="#addPurchaseList" prefHeight="69.0" prefWidth="98.0" text="Add" />
+                <Button fx:id="deletePurchaseBtn" layoutX="349.0" layoutY="262.0" mnemonicParsing="false" onAction="#deletePurchaseList" prefHeight="69.0" prefWidth="98.0" text="Delete" />
+                <Button fx:id="diagramBtn" layoutX="466.0" layoutY="379.0" mnemonicParsing="false" onAction="#show_Pie_Diagram" prefHeight="69.0" prefWidth="98.0" text="Diagram" />
+                <Button fx:id="exitBtn" layoutX="458.0" layoutY="553.0" mnemonicParsing="false" onAction="#exit_to_Login" prefHeight="69.0" prefWidth="98.0" text="Exit" />
+            <Button fx:id="loadInfoDB" layoutX="349.0" layoutY="379.0" mnemonicParsing="false" onAction = "#loadData" prefHeight="69.0" prefWidth="98.0" text="Load Data" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
